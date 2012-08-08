@@ -11,7 +11,7 @@ This document describes a simple prototype that demonstrates the use of Fuse ESB
 
 Here is the design:
 
-![Design Image](https://github.com/scranton/camel-example-loadbalance/blob/master/images/design.png "Design Image")
+![Design Image](https://raw.github.com/scranton/camel-example-loadbalance/master/images/design.png "Design Image")
 
 Application A sends JMS messages to a ROUTER-INPUT queue. A failover-capable router pickups up messages and sends them
 to Controller 1 using a RESTful service call. Controller 1 stamps the message as having been processed and returns it
@@ -56,20 +56,20 @@ Start Fuse ESB
 
 Run the command `bin/fuseesb` in the root directory of Fuse ESB. Here is what the console looks like:
 
-![Console Image](https://github.com/scranton/camel-example-loadbalance/blob/master/images/console.png "Console Image")
+![Console Image](https://raw.github.com/scranton/camel-example-loadbalance/master/images/console.png "Console Image")
 
 Within the Fuse ESB session, run the command `features:install activemq-web-console` to install the message broker’s
 console. Then run the command `features:list | grep activemq` to make sure the message broker is available. Make sure
 the activemq and activemq-web-console features have a status of `[installed  ]` as in the screenshot below:
 
-![Screenshot Image](https://github.com/scranton/camel-example-loadbalance/blob/master/images/screenshot.png "Screenshot Image")
+![Screenshot Image](https://raw.github.com/scranton/camel-example-loadbalance/master/images/screenshot.png "Screenshot Image")
 
 Connect to the ActiveMQ Web Console
 -----------------------------------
 
 Launch a browser and connect to the ActiveMQ Web Console at http://localhost:8181/activemqweb/queues.jsp
 
-![ActiveMQ Web Console Image](https://github.com/scranton/camel-example-loadbalance/blob/master/images/amq-web-console.png "ActiveMQ Web Console Image")
+![ActiveMQ Web Console Image](https://raw.github.com/scranton/camel-example-loadbalance/master/images/amq-web-console.png "ActiveMQ Web Console Image")
 
 No Queues exist yet; they will be dynamically created by the router as needed.
 
@@ -202,15 +202,15 @@ configuration of the failover-load balancer)
 
 Refresh the ActiveMQ Web Console and we can see the number of messages processed:
 
-![ActiveMQ Web Console 2 Image](https://github.com/scranton/camel-example-loadbalance/blob/master/images/amq-web-console2.png "ActiveMQ Web Console 2 Image")
+![ActiveMQ Web Console 2 Image](https://raw.github.com/scranton/camel-example-loadbalance/master/images/amq-web-console2.png "ActiveMQ Web Console 2 Image")
 
 To inspect the projects using Fuse IDE, launch Fuse IDE and import the three projects as “Existing Maven Projects”:
 
-![Import Maven Projects Image](https://github.com/scranton/camel-example-loadbalance/blob/master/images/import-maven-projects.png "Import Maven Projects Image")
+![Import Maven Projects Image](https://raw.github.com/scranton/camel-example-loadbalance/master/images/import-maven-projects.png "Import Maven Projects Image")
 
 Navigate to the router project’s camel-context.xml file to see a visual editor for the integration:
 
-![Camel Context Image](https://github.com/scranton/camel-example-loadbalance/blob/master/images/camel-context.png "Camel Context Image")
+![Camel Context Image](https://raw.github.com/scranton/camel-example-loadbalance/master/images/camel-context.png "Camel Context Image")
 
 Switch to the Source tab to see the definition of the integration:
 
