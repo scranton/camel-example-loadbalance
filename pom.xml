@@ -37,7 +37,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <activemq.version>5.5.1.fuse-7-061</activemq.version>
+        <activemq.version>5.7.0</activemq.version>
         <camel.version>2.9.0.fuse-7-061</camel.version>
         <cxf.version>2.6.1</cxf.version>
         <slf4j.version>1.6.4</slf4j.version>
